@@ -1,0 +1,46 @@
+# Doxyfile minimal pour projet en C
+ 
+# Nom du projet
+PROJECT_NAME           = "Projet Tri"
+ 
+# Générer la documentation HTML
+GENERATE_HTML          = YES
+HTML_OUTPUT            = docs
+ 
+# Ne pas générer de documentation LaTeX
+GENERATE_LATEX         = NO
+ 
+# Répertoire contenant les fichiers source à documenter
+INPUT                  = .
+ 
+# Explorer les sous-dossiers (mets YES si ton code est dans des sous-dossiers)
+RECURSIVE              = YES
+ 
+# Extensions de fichiers à inclure
+FILE_PATTERNS          = *.c *.h
+ 
+# Spécialisation pour le C (désactive les fonctionnalités C++)
+OPTIMIZE_OUTPUT_FOR_C  = YES
+ 
+# Extraire tout, même si non commenté
+EXTRACT_ALL            = YES
+ 
+# Inclure les fonctions statiques
+EXTRACT_STATIC         = YES
+ 
+# Reconnaître les balises de type @brief automatiquement
+JAVADOC_AUTOBRIEF      = YES
+ 
+# Afficher le code source dans la documentation
+INLINE_SOURCES         = YES
+SOURCE_BROWSER         = YES
+ 
+# Activer la vue en arbre (dans l'interface HTML)
+GENERATE_TREEVIEW      = YES
+ 
+# Prétraitement C basique
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+ 
+# Langue de la documentation
+OUTPUT_LANGUAGE        = French

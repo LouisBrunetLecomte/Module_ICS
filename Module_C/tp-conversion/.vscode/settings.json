@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ctype.h": "c",
+        "hexa_to_decimal.h": "c",
+        "décimal_to_binaire_v2.h": "c"
+    }
+}

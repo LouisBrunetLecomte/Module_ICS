@@ -1,0 +1,18 @@
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -c src/array_list.c  -o src/array_list.o
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -c src/heap.c  -o src/heap.o
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -c src/main.c  -o src/main.o
+src/main.c: In function ‘main’:
+src/main.c:35:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   35 | int main(int argc, char** argv) {
+      |          ~~~~^~~~
+src/main.c:35:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+   35 | int main(int argc, char** argv) {
+      |                    ~~~~~~~^~~~
+src/main.c: In function ‘test’:
+src/main.c:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+   29 | }
+      | ^
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -c src/queue.c  -o src/queue.o
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -c src/stack.c  -o src/stack.o
+gcc -Wall -Wextra -g -lm -std=c99 -Iinclude -o bin/main src/array_list.o src/heap.o src/main.o src/queue.o src/stack.o  -Llib
+Executing all complete!

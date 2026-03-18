@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>bean.localhost:50080</title>
+    <script>
+const target = "http://elfo.localhost:50080/part3";
+
+function load() {
+    fetch(target)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("title").innerText = "👏 Succès";
+            document.getElementById("content").innerHTML = data.message + "<br><br><pre>Reçu le : " + data.time + "\nUser-Agent : " + data.user_agent + "\nIP : " + data.ip + "</pre>";
+        })
+        .catch(error => {
+            document.getElementById("title").innerText = "👎 Erreur";
+            document.getElementById("content").innerText = "Consultez la console pour plus de détails - " + error;
+        });
+}
+
+load();
+    </script>
+</head>
+<body>
+    <h1>Bienvenue sur bean</h1>
+    <section>
+        <h2>Chargement d'une ressource d'elfo</h2>
+        <h3 id="title">Accès à elfo.localhost:50080</h3>
+        <p id="content">Chargement en cours</p>
+    </section>
+    <section>
+        <h2>Chargement d'une ressource de bean</h2>
+        <img src="../images/Bean.jpg">
+    </section>
+</body>
+</html>

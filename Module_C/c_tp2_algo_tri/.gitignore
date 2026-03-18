@@ -1,0 +1,7 @@
+.vscode/
+src/*.o
+src/*.d
+include/
+lib/
+output/
+docs/

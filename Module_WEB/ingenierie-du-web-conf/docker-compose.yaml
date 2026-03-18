@@ -1,0 +1,14 @@
+services:
+  php:
+    container_name: iw-php
+    build:
+      context: ./conf/php/
+    restart: on-failure
+    ports:
+      - 50080:80
+      - 58080:8080
+    volumes:
+      - ./src/html:/var/www/html
+      - ./src/bean:/var/www/bean
+      - ./src/elfo:/var/www/elfo
+      # - ./conf/apache:/etc/apache2

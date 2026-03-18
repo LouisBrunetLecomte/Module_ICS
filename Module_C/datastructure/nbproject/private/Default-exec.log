@@ -1,0 +1,157 @@
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-c
+	src/array_list.c
+	-o
+	src/array_list.o
+
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-c
+	src/heap.c
+	-o
+	src/heap.o
+
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-c
+	src/main.c
+	-o
+	src/main.o
+
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-c
+	src/queue.c
+	-o
+	src/queue.o
+
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-c
+	src/stack.c
+	-o
+	src/stack.o
+
+called: /usr/lib64/ccache/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-o
+	bin/main
+	src/array_list.o
+	src/heap.o
+	src/main.o
+	src/queue.o
+	src/stack.o
+	-Llib
+
+called: /usr/bin/gcc
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	/usr/bin/gcc
+	-Wall
+	-Wextra
+	-g
+	-lm
+	-std=c99
+	-Iinclude
+	-o
+	bin/main
+	src/array_list.o
+	src/heap.o
+	src/main.o
+	src/queue.o
+	src/stack.o
+	-Llib
+
+called: /usr/bin/ld
+	/home/aurelio/Desktop/Chartreux-2023-2024/ICS/DEVINF/Cours/06-Structures donnees/DataStructure-amorce
+	/usr/bin/ld
+	-plugin
+	/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so
+	-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccZS4Y72.res
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lgcc_s
+	--build-id
+	--no-add-needed
+	--eh-frame-hdr
+	--hash-style=gnu
+	-m
+	elf_x86_64
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-o
+	bin/main
+	/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o
+	/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o
+	/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o
+	-Llib
+	-L/usr/lib/gcc/x86_64-redhat-linux/13
+	-L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64
+	-L/lib/../lib64
+	-L/usr/lib/../lib64
+	-L/usr/lib/gcc/x86_64-redhat-linux/13/../../..
+	-lm
+	src/array_list.o
+	src/heap.o
+	src/main.o
+	src/queue.o
+	src/stack.o
+	-lgcc
+	--push-state
+	--as-needed
+	-lgcc_s
+	--pop-state
+	-lc
+	-lgcc
+	--push-state
+	--as-needed
+	-lgcc_s
+	--pop-state
+	/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o
+	/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o
+

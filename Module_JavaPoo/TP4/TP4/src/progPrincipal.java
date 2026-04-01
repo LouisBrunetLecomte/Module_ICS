@@ -6,6 +6,8 @@ public class progPrincipal {
         Elephant ASIII = new Elephant(2020, "ASIII", 1500, SexeAnimal.Feminin, 2, Continent.Asie); 
         Girafe Pascal = new Girafe(2000, "Pascal", 1900, SexeAnimal.Masculin, 5.5);
         Girafe Sophie = new Girafe(2024, "Sophie", 400, SexeAnimal.Feminin, 2.8);
+        Serpent Sonny = new Serpent(2022, "Sonny", 1.1, SexeAnimal.Masculin, 1, EspeceSerpent.A_sonnette, true);
+        Serpent Bois = new Serpent(2025, "Bois", 8.5, SexeAnimal.Feminin, 1.8, EspeceSerpent.Boa, false);
 
         ArrayList <Elephant> listElephants = new ArrayList<>();
         listElephants.add(Djumbo);
@@ -14,6 +16,10 @@ public class progPrincipal {
         ArrayList <Girafe> listGirafe = new ArrayList<>();
         listGirafe.add(Pascal);
         listGirafe.add(Sophie);
+
+        ArrayList <Serpent> listSerpents = new ArrayList<>();
+        listSerpents.add(Sonny);
+        listSerpents.add(Bois);
 
         for (Elephant e : listElephants){
             System.out.println(e.toString());
@@ -33,5 +39,12 @@ public class progPrincipal {
             System.out.println("\n");
         }
         
+        for (Serpent s : listSerpents){
+            System.out.println(s.toString());
+            System.out.println("Est adulte : " + s.estAdulte());
+            System.out.println("Cri : " + s.cri());
+            System.out.println(s.getNom() + " a pour nourriture préférée " + s.proiesPreferees() + " et en manges " + s.qtteViandeSemaine() + "kg par semaine");
+            System.out.println("\n");
+        }
     }
 }

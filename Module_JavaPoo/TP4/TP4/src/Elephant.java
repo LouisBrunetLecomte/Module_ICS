@@ -1,5 +1,3 @@
-import java.security.PKCS12Attribute;
-
 public class Elephant extends Animal implements Herbivore{
     private Continent continent;
     private static int AGE_ADULTE =13;

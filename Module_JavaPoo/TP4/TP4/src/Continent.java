@@ -1,4 +1,6 @@
 public enum Continent {
     Asie,
-    Afrique;
+    Afrique,
+    Europe,
+    Amerique;
 }

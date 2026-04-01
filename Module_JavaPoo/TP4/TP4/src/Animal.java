@@ -4,9 +4,9 @@ public abstract class Animal {
     private double poids;
     private SexeAnimal sexe;
     private double taille;
-    private static String UM_AGE = "an(s)";
-    private static String UM_POIDS = "kg";
-    private static String UM_TAILLE = "m";
+    private static final String UM_AGE = "an(s)";
+    private static final String UM_POIDS = "kg";
+    private static final String UM_TAILLE = "m";
 
     public Animal() {
 
@@ -86,7 +86,7 @@ public abstract class Animal {
     // Override
     @Override
     public String toString(){
-        return "Nom : " + this.getNom() + "\n" +
+        return "\n" + "Nom : " + this.getNom() + "\n" +
         "Année de naissance : " + getAnneeNaissance() + "\n" +
         "Age : " + this.getAge() + UM_AGE + "\n" +
         "Poids : " + this.getPoids() + UM_POIDS + "\n" +

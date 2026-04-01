@@ -1,15 +1,33 @@
 public class Girafe extends Animal implements Herbivore{
     private Continent continent;
-    private static int AGE_ADULTE =4;
-    private static int AGE_LAIT = 2;
+    private static final int AGE_ADULTE =4;
+    private static final int AGE_LAIT = 2;
 
 
     public Continent getContinent(){
         return this.continent;
     }
 
+    public int getAGE_ADULTE(){
+        return AGE_ADULTE;
+    }
+
+    public int AGE_LAIT(){
+        return AGE_LAIT;
+    }
+
     public void setContinent(Continent continent){
         this.continent = continent;
+    }
+
+
+    public Girafe(){
+        super();
+    }
+
+    public Girafe(int anneeNaissance, String nom, double poids, SexeAnimal sexe, double taille) {
+        super(anneeNaissance, nom, poids, sexe, taille);
+        this.setContinent(continent);
     }
 
     @Override
@@ -33,19 +51,11 @@ public class Girafe extends Animal implements Herbivore{
         }
     }
 
-    public Girafe(){
-        super();
-    }
-
-    public Girafe(int anneeNaissance, String nom, double poids, SexeAnimal sexe, double taille) {
-        super(anneeNaissance, nom, poids, sexe, taille);
-        this.setContinent(continent);
-    }
 
     @Override
     public String toString(){
-        return super.toString() + "\n" +
-                "type: Girafe";
+        return "\n" + super.toString() + "\n" +
+                "type: Girafe" + "\n";
     }
 
     @Override

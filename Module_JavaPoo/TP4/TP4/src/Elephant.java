@@ -1,13 +1,21 @@
 public class Elephant extends Animal implements Herbivore{
     private Continent continent;
-    private static int AGE_ADULTE =13;
-    private static int AGE_LAIT =5;
+    private static final int AGE_ADULTE =13;
+    private static final int AGE_LAIT =5;
 
 
     //getter et setters pour continent
 
     public Continent getContinent(){
         return this.continent;
+    }
+
+    public int getAGE_ADULTE(){
+        return AGE_ADULTE;
+    }
+
+    public int AGE_LAIT(){
+        return AGE_LAIT;
     }
 
     public void setContinent(Continent continent){
@@ -64,7 +72,7 @@ public class Elephant extends Animal implements Herbivore{
         return super.toString() + "\n" +
                     "type: elephant" + "\n" + 
                     "origine : " + this.getContinent() + "\n" +
-                    "info sup : " + chaine;
+                    "info sup : " + chaine + "\n";
     }
 
     @Override

@@ -1,15 +1,26 @@
 public class Serpent extends Animal implements ICarnivore{
     private EspeceSerpent especeSerpent;
     private boolean Venimeux;
-    private static int AGE_ADULTE = 2;
+    private static final int AGE_ADULTE = 2;
 
     public EspeceSerpent getEspeceSerpent(){
         return this.especeSerpent;
     }
 
+    public boolean getVenimeux(){
+        return this.Venimeux;
+    }
+
+    public int getAGE_ADULTE(){
+        return AGE_ADULTE;
+    }
+
+
     public void setContinent(EspeceSerpent especeSerpent){
         this.especeSerpent = especeSerpent;
     }
+
+
 
     public Serpent(){
         super();
@@ -19,6 +30,17 @@ public class Serpent extends Animal implements ICarnivore{
         super(anneeNaissance, nom, poids, sexe, taille);
         this.especeSerpent = especeSerpent;
         this.Venimeux = Venimeux;
+    }
+
+
+    public boolean Venimeux(){
+        if (especeSerpent == EspeceSerpent.Boa || especeSerpent == EspeceSerpent.Couleuvre) {
+            this.Venimeux = false;
+        }
+        else {
+            this.Venimeux = true;
+        }
+        return Venimeux;
     }
 
     @Override
@@ -48,22 +70,14 @@ public class Serpent extends Animal implements ICarnivore{
         }
     }
     
-    public boolean Venimeux(){
-        if (especeSerpent == EspeceSerpent.Boa || especeSerpent == EspeceSerpent.Couleuvre) {
-            this.Venimeux = false;
-        }
-        else {
-            this.Venimeux = true;
-        }
-        return Venimeux;
-    }
+
 
     @Override
     public String toString(){
-        return super.toString() + "\n" +
+        return "\n" + super.toString() + "\n" +
             "type: serpent" + "\n" +
             "Le serpent est venimeux ? : " + this.Venimeux() + "\n" +
-            "espece : " + this.getEspeceSerpent();
+            "espece : " + this.getEspeceSerpent()+ "\n";
     }
 
     @Override

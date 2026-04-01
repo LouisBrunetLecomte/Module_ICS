@@ -1,7 +1,27 @@
 public class Ours extends Animal implements ICarnivore, Herbivore{
     private OursEspece oursEspece;
-    private static int AGE_ADULTE = 3;
-    private static int AGE_ADULTE_BRUN = 4;
+    private static final int AGE_ADULTE = 3;
+    private static final int AGE_ADULTE_BRUN = 4;
+
+
+    private OursEspece getOursEspece() {
+        return this.oursEspece;
+    }
+
+    private int getAGE_ADULTE() {
+        return AGE_ADULTE;
+    }
+
+    private int getAGE_ADULTE_BRUN() {
+        return AGE_ADULTE_BRUN;
+    }
+
+
+    public void setEspece(OursEspece newEspece) {
+        this.oursEspece = newEspece;
+    }
+
+
 
     public Ours() {
         super();
@@ -13,14 +33,7 @@ public class Ours extends Animal implements ICarnivore, Herbivore{
     }
 
 
-    private OursEspece getOursEspece() {
-        return this.oursEspece;
-    }
-    public void setEspece(OursEspece newEspece) {
-        this.oursEspece = newEspece;
-    }
     
-
     public boolean estAdulte() {
         if (AGE_ADULTE <= getAge()) {
             return true;
@@ -84,9 +97,9 @@ public class Ours extends Animal implements ICarnivore, Herbivore{
 
     @Override
     public String toString(){
-        return super.toString() + "\n" +
+        return "\n" + super.toString() + "\n" +
             "type: Ours" + "\n" +
-            "espece : " + this.getOursEspece();
+            "espece : " + this.getOursEspece() + "\n";
     }
 
 

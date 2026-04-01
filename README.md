@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Ecole-CPE%20Lyon-blue?style=for-the-badge&logo=education" alt="CPE Lyon">
   <img src="https://img.shields.io/badge/Spécialité-ICS-red?style=for-the-badge&logo=fortinet" alt="Spécialité ICS">
-  <img src="https://img.shields.io/badge/Promo-2024--2027-lightgrey?style=for-the-badge" alt="Promo">
+  <img src="https://img.shields.io/badge/Promo-2024--2028-lightgrey?style=for-the-badge" alt="Promo">
 </p>
 
 ---

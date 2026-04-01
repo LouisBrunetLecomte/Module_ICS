@@ -1,4 +1,4 @@
-# 🛡️ Parcours Ingénieur : Informatique & Cybersécurité (ICS)
+# Parcours Ingénieur : Informatique & Cybersécurité (ICS)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ecole-CPE%20Lyon-blue?style=for-the-badge&logo=education" alt="CPE Lyon">
@@ -8,7 +8,7 @@
 
 ---
 
-## 📖 Présentation
+## Présentation
 Bienvenue sur mon dépôt central de ressources académiques. Ce repository regroupe l'ensemble des travaux, exercices et projets réalisés durant ma formation au sein de la filière **Informatique et Cybersécurité (ICS)** à **CPE Lyon**.
 
 L'objectif de ce projet est de documenter ma progression technique et de maintenir une base de connaissances accessible sur les piliers du développement et de la sécurité.
@@ -18,7 +18,7 @@ L'objectif de ce projet est de documenter ma progression technique et de mainten
 
 ---
 
-## 🛠️ Stack Technologique
+## Stack Technologique
 
 | Catégorie | Technologies |
 | :--- | :--- |
@@ -28,24 +28,24 @@ L'objectif de ce projet est de documenter ma progression technique et de mainten
 
 ---
 
-## 📂 Domaines d'Exploration
+## Domaines d'Exploration
 
-### 👨‍💻 Développement Logiciel & Système
+### Développement Logiciel & Système
 * **C / C++ Avancé** : Gestion de la mémoire vive, manipulation de pointeurs et programmation système.
 * **POO (Java)** : Application des concepts d'encapsulation, d'héritage et des Design Patterns.
 * **Algorithmie** : Structures de données (piles, files, arbres) et optimisation de la complexité.
 
-### 🔐 Cybersécurité & Réseaux
+### Cybersécurité & Réseaux
 * **Réseaux** : Modèle OSI, protocoles TCP/IP et analyse de trames avec Wireshark.
 * **Sécurité** : Sensibilisation aux bonnes pratiques de développement sécurisé et protection des données.
 
-### 🐧 Infrastructure & DevOps
+### Infrastructure & DevOps
 * **Administration Linux** : Gestion des utilisateurs, des permissions et des services système.
 * **Automatisation** : Création de scripts Bash pour optimiser les workflows sous environnement Unix.
 
 ---
 
-## 🚀 Navigation & Utilisation
+## Navigation & Utilisation
 
 1. **Clonage du dépôt :**
    ```bash
@@ -56,7 +56,7 @@ Naviguez dans les répertoires pour accéder aux différents modules (ex: `Progr
 
 ---
 
-## 🤝 Contact
+## Contact
 Je reste disponible pour toute question relative à ces travaux ou pour discuter d'opportunités en cybersécurité.
 
 * **Profil GitHub :** [@LouisBrunetLecomte](https://github.com/LouisBrunetLecomte)

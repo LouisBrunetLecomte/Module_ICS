@@ -53,13 +53,6 @@ L'objectif de ce projet est de documenter ma progression technique et de mainten
    ```
 ### 2. Structure :
 Naviguez dans les répertoires pour accéder aux différents modules (ex: `Programmation_Systeme`, `Java_Projects`, etc.).
-
-### 3. Compilation :
-La plupart des projets en C/C++ incluent un `Makefile`.
-
-  ```bash
-  make
-  ```
 ---
 
 ## 🤝 Contact

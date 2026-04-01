@@ -1,4 +1,4 @@
-public class Serpent extends Animal implements ICarnicore{
+public class Serpent extends Animal implements ICarnivore{
     private EspeceSerpent especeSerpent;
     private boolean Venimeux;
     private static int AGE_ADULTE = 2;
@@ -40,7 +40,7 @@ public class Serpent extends Animal implements ICarnicore{
 
     @Override
     public boolean estAdulte() {
-        if (AGE_ADULTE < getAge()) {
+        if (AGE_ADULTE < this.getAge()) {
             return true;
         }
         else{
@@ -63,8 +63,7 @@ public class Serpent extends Animal implements ICarnicore{
         return super.toString() + "\n" +
             "type: serpent" + "\n" +
             "Le serpent est venimeux ? : " + this.Venimeux() + "\n" +
-            "espece : " + this.getEspeceSerpent() + "\n" +
-            "Et le serpent " + this.getEspeceSerpent() + " tue avec cette méthode : " + this.tue();
+            "espece : " + this.getEspeceSerpent();
     }
 
     @Override

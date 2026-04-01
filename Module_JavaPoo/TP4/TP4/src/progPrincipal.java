@@ -8,6 +8,9 @@ public class progPrincipal {
         Girafe Sophie = new Girafe(2024, "Sophie", 400, SexeAnimal.Feminin, 2.8);
         Serpent Sonny = new Serpent(2022, "Sonny", 1.1, SexeAnimal.Masculin, 1, EspeceSerpent.A_sonnette, true);
         Serpent Bois = new Serpent(2025, "Bois", 8.5, SexeAnimal.Feminin, 1.8, EspeceSerpent.Boa, false);
+        Ours Teddy = new Ours(SexeAnimal.Masculin, "Teddy", 2016, 500, 3.0, OursEspece.Polaire);
+        Ours Andromeda = new Ours(SexeAnimal.Feminin, "Andromeda", 2024, 80, 0.8, OursEspece.Brun);
+
 
         ArrayList <Elephant> listElephants = new ArrayList<>();
         listElephants.add(Djumbo);
@@ -20,6 +23,10 @@ public class progPrincipal {
         ArrayList <Serpent> listSerpents = new ArrayList<>();
         listSerpents.add(Sonny);
         listSerpents.add(Bois);
+        
+        ArrayList <Ours> listOurs = new ArrayList<>();
+        listOurs.add(Teddy);
+        listOurs.add(Andromeda);
 
         for (Elephant e : listElephants){
             System.out.println(e.toString());
@@ -43,7 +50,15 @@ public class progPrincipal {
             System.out.println(s.toString());
             System.out.println("Est adulte : " + s.estAdulte());
             System.out.println("Cri : " + s.cri());
-            System.out.println(s.getNom() + " a pour nourriture préférée " + s.proiesPreferees() + " et en manges " + s.qtteViandeSemaine() + "kg par semaine");
+            System.out.println(s.getNom() + " a pour nourriture préférée " + s.proiesPreferees() + " et en manges " + s.qtteViandeSemaine() + "kg par semaine" + ". Et le serpent " + s.getEspeceSerpent() + " tue avec cette méthode : " + s.tue());
+            System.out.println("\n");
+        }
+
+        for (Ours o : listOurs){
+            System.out.println(o.toString());
+            System.out.println("Est adulte : " + o.estAdulte());
+            System.out.println("Cri : " + o.cri());
+            System.out.println(o.getNom() + " a pour nourriture préférée " + o.PlantePreferee() + " ainsi que " +  o.proiesPreferees() + " et en manges " + o.qtteViandeSemaine() / 7 + "kg par jours" + ". Il tue avec cette méthode " + o.tue());
             System.out.println("\n");
         }
     }

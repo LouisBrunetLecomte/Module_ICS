@@ -60,7 +60,7 @@ Naviguez dans les répertoires pour accéder aux différents modules (ex: `Progr
 Je reste disponible pour toute question relative à ces travaux ou pour discuter d'opportunités en cybersécurité.
 
 * **Profil GitHub :** [@LouisBrunetLecomte](https://github.com/LouisBrunetLecomte)
-* **LinkedIn :** [Louis Brunet-Lecomte](https://www.linkedin.com/in/louis-brunet-lecomte/)
+* **LinkedIn :** [Louis Brunet-Lecomte](www.linkedin.com/in/lbl-it)
 
 <p align="center">
   <i>"La sécurité est un processus, pas un produit." — Bruce Schneier</i>

@@ -1,51 +1,53 @@
-# 🛡️ CPE Lyon - Informatique et Cybersécurité (ICS)
+# 🛡️ CPE Lyon : Filière Informatique et Cybersécurité (ICS)
 
-Bienvenue sur mon espace de ressources académiques. Ce dépôt centralise l'ensemble de mes travaux, TP et projets réalisés au sein de la filière **ICS** de **CPE Lyon**. 
+Bienvenue sur mon dépôt centralisant les travaux et projets réalisés durant ma formation d'ingénieur en **Informatique et Cybersécurité (ICS)** à **CPE Lyon**. 
 
-Ce repo témoigne de ma progression technique, de la maîtrise des fondamentaux du développement à l'appréhension des enjeux complexes de la cybersécurité.
-
----
-
-## 👨‍💻 Profil
-* **Auteur :** Louis Brunet-Lecomte
-* **École :** CPE Lyon
-* **Filière :** Informatique et Cybersécurité (ICS)
-* **Focus :** Développement sécurisé, Architecture système, Pentest & Réseaux.
+Ce repository est une vitrine de ma progression technique, couvrant aussi bien le développement bas niveau que l'administration système et les enjeux de sécurité offensive/défensive.
 
 ---
 
-## 📂 Organisation du cursus
-
-Le dépôt est structuré pour refléter la polyvalence de la formation ICS :
-
-### 🔐 Cybersécurité & Réseaux
-* **Sécurité Offensive/Défensive** : Travaux sur les vulnérabilités, cryptographie et protocoles sécurisés.
-* **Architecture Réseau** : Configuration de services, routage, et sécurité périmétrique (Firewall, IDS/IPS).
-* **Analyse de logs** : Détection d'anomalies et monitoring.
-
-### 💻 Développement & Architecture
-* **C / C++ Avancé** : Programmation système, gestion de la mémoire et optimisation.
-* **Programmation Orientée Objet** : Conception logicielle robuste en Java / Python.
-* **Web & APIs** : Développement fullstack avec intégration des bonnes pratiques de sécurité (OWASP).
-
-### ⚙️ Systèmes & Infrastructure
-* **Systèmes Unix/Linux** : Administration système avancée et scripting Bash/Python.
-* **Virtualisation & Cloud** : Manipulation d'environnements virtualisés (Docker, VM).
+## 👨‍💻 Profil & Objectifs
+* **Auteur :** Louis Brunet-Lecomte ([@LouisBrunetLecomte](https://github.com/LouisBrunetLecomte))
+* **Formation :** Ingénieur ICS - CPE Lyon
+* **Contenu :** Ce repo regroupe mes exercices de TP (Travaux Pratiques), mes projets de modules et mes documentations personnelles.
 
 ---
 
-## 🚀 Stack Technique
+## 📂 Organisation du Dépôt
+
+Le projet est structuré par modules d'enseignement pour faciliter la navigation :
+
+### 🛡️ Sécurité & Réseaux
+* **Architecture Réseaux** : Protocoles TCP/IP, routage, configuration de services (DNS, DHCP, Mail).
+* **Cybersécurité** : Analyse de vulnérabilités, cryptographie, outils de pentest et durcissement système.
+* **Sécurité des Communications** : Mise en œuvre de tunnels (VPN, SSH) et analyse de flux.
+
+### 💻 Développement & Programmation
+* **Programmation Système & C** : Gestion mémoire, pointeurs, appels système et multithreading.
+* **Programmation Orientée Objet (Java/C++)** : Design Patterns, robustesse logicielle et modularité.
+* **Scripting Automatisé** : Automatisation de tâches complexes via **Bash** et **Python**.
+
+### ⚙️ Systèmes & DevOps
+* **Administration Linux** : Gestion des droits, services système (systemd), et scripting d'administration.
+* **Virtualisation** : Mise en place d'infrastructures virtualisées et conteneurisation.
+
+---
+
+## 🚀 Technologies & Outils
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,python,bash,linux,docker,mysql,wireshark,github,debian" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,python,bash,linux,debian,docker,mysql,git,vscode,wireshark" />
 </p>
+
+* **Langages :** C, C++, Java, Python, Shell/Bash.
+* **Systèmes :** Debian/Ubuntu (Environnements de travail principaux).
+* **Sécurité :** Wireshark, OpenSSL, Nmap, Metasploit (selon modules).
+* **Outils :** Git, GCC/G++, Maven, Docker.
 
 ---
 
-## 📖 Utilisation
+## 📖 Comment utiliser ce repo ?
 
-1. **Exploration** : Les dossiers sont nommés selon les modules de l'école.
-2. **Documentation** : Chaque projet majeur inclut un `README.md` spécifique détaillant les consignes et les choix techniques.
-3. **Installation** :
+1. **Cloner le projet :**
    ```bash
-   git clone [https://github.com/LouisBrunetLecomte/NOM_DU_REPO.git](https://github.com/LouisBrunetLecomte/NOM_DU_REPO.git)
+   git clone [https://github.com/LouisBrunetLecomte/Module_ICS.git](https://github.com/LouisBrunetLecomte/Module_ICS.git)

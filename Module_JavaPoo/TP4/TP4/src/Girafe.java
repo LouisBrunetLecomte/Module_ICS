@@ -71,7 +71,6 @@ public class Girafe extends Animal implements Herbivore{
 
     @Override
     public double qttePlanteJour() {
-        double qttePlanteJour = this.getPoids() * 0.25;
-        return qttePlanteJour;
+        return this.getPoids() * 0.05;
     }
 }

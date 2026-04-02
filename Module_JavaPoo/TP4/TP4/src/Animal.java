@@ -53,17 +53,21 @@ public abstract class Animal {
     }
     
     public void setAnneeNaissance(int anneeNaissance) {
-        this.anneeNaissance = anneeNaissance;
-    }
-    public void setNom(String nom) {
-        if (nom.equals("") || nom.equals(null) ) {
-            System.out.println("Il faut un nom");
+        if (anneeNaissance > 2026) {
+            System.out.println("Entrez une année de naissance valide");
+        } else {
+            this.anneeNaissance = anneeNaissance;
         }
-        else{
+    }
+
+    public void setNom(String nom) {
+        if (nom == null || nom.isEmpty()) {
+            System.out.println("Il faut un nom");
+        } else {
             this.nom = nom;
         }
-
     }
+
     public void setPoids(double poids) {
         if (poids < 0) {
             System.out.println("Il faut que le poid soit renseigné");

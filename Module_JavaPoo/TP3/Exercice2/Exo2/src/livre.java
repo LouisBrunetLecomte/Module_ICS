@@ -47,5 +47,6 @@ public class livre extends Article{
         "Auteur : " + this.getAuteur() + " | " +
         "Nombre de pages : " + this.getNbPages();
     }
+    
 
 }

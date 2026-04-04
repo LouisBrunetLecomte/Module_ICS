@@ -35,6 +35,7 @@ public class dvd extends Article{
         super(reference, designation, prix);
         this.setDuree(duree);
         this.setRealisateur(realisateur);
+        this.realisateur.ajouterOeuvre((Article)this);
     }
 
     @Override

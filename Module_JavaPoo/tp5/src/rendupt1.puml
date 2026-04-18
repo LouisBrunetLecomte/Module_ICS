@@ -1,0 +1,89 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Enseignant <<interface>> {
+    + getSalaireBrut(): double
+    + getCoutCPE(tauxCharges: double): double
+}
+
+abstract class EnseignantBase {
+    - nom: String
+    - prenom: String
+    - specialite: String
+    # heures: int
+    --
+    + EnseignantBase(nom: String, prenom: String, specialite: String, heures: int)
+    + getNom(): String
+    + getPrenom(): String
+    + getSpecialite(): String
+    + getHeures(): int
+    + getCoutCPE(tauxCharges: double): double
+    + toString(): String
+}
+
+class Permanent {
+    - {static} SALAIRE_MENSUEL: double = 3000
+    - {static} TAUX_HEURE_COMP: double = 80
+    - {static} SEUIL_HEURES_COMP: int = 200
+    --
+    + Permanent(nom: String, prenom: String, specialite: String, heures: int)
+    + getSalaireBrut(): double
+}
+
+class Vacataire {
+    - {static} TAUX_HORAIRE: double = 60
+    - organisme: String
+    --
+    + Vacataire(nom: String, prenom: String, specialite: String, heures: int, organisme: String)
+    + getOrganisme(): String
+    + getSalaireBrut(): double
+}
+
+class Doctorant {
+    - {static} TAUX_HORAIRE: double = 40
+    - {static} MAX_HEURES: int = 100
+    --
+    + Doctorant(nom: String, prenom: String, specialite: String, heures: int)
+    + getSalaireBrut(): double
+}
+
+enum Formation {
+    ICS
+    IRC
+    ETI
+    PSM
+    CGP
+    GPI
+}
+
+class Etudiant {
+    - {static} TAUX_HORAIRE: double = 20
+    - {static} MAX_HEURES: int = 50
+    - nom: String
+    - prenom: String
+    - formation: Formation
+    - heures: int
+    --
+    + Etudiant(nom: String, prenom: String, formation: Formation, heures: int)
+    + getNom(): String
+    + getPrenom(): String
+    + getFormation(): Formation
+    + getHeures(): int
+    + getSalaireBrut(): double
+    + getCoutCPE(): double
+    + toString(): String
+}
+
+note bottom of Etudiant
+  N'est PAS un enseignant.
+  Pas de charges patronales.
+  Plafonné à 50h.
+end note
+
+Enseignant <|.. EnseignantBase
+EnseignantBase <|-- Permanent
+EnseignantBase <|-- Vacataire
+EnseignantBase <|-- Doctorant
+Etudiant --> Formation : utilise
+
+@enduml
